@@ -1,0 +1,28 @@
+{
+  "name": "@riadh-adrani/create-ruvy",
+  "description": "creates a Ruvy starter template project with Typescript.",
+  "version": "0.0.1",
+  "type": "module",
+  "bin": "./build/index.js",
+  "main": "./build/index.js",
+  "license": "MIT",
+  "author": "RiadhAdrani",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/RiadhAdrani/create-ruvy"
+  },
+  "scripts": {
+    "build": "rm -rf build && tsc && cp -r template-ruvy-ts build"
+  },
+  "devDependencies": {
+    "@types/cross-spawn": "^6.0.2",
+    "@types/minimist": "^1.2.2",
+    "@types/node": "^20.3.1",
+    "@types/prompts": "^2.4.4",
+    "cross-spawn": "^7.0.3",
+    "kolorist": "^1.8.0",
+    "minimist": "^1.2.8",
+    "prompts": "^2.4.2",
+    "typescript": "^5.0.2"
+  }
+}
