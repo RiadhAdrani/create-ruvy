@@ -1,5 +1,5 @@
 {
-  "name": "ruvy-sandbox",
+  "name": "create-ruvy-ts",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -13,6 +13,6 @@
     "vite": "^4.3.9"
   },
   "dependencies": {
-    "@riadh-adrani/ruvy": "^0.2.0"
+    "@riadh-adrani/ruvy": "^0.4.4"
   }
 }
