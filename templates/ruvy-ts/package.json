@@ -13,6 +13,6 @@
     "vite": "^4.3.9"
   },
   "dependencies": {
-    "@riadh-adrani/ruvy": "^0.4.4"
+    "@riadh-adrani/ruvy": "^0.4.14"
   }
 }
