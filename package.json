@@ -1,7 +1,7 @@
 {
   "name": "@riadh-adrani/create-ruvy",
   "description": "creates a Ruvy starter template project with Typescript.",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "type": "module",
   "bin": "index.js",
   "main": "index.js",
