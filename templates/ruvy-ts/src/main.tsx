@@ -1,16 +1,19 @@
 import './style.css';
-import { mountApp, useReactive } from '@riadh-adrani/ruvy';
+import { mountApp, useState } from '@riadh-adrani/ruvy';
 
-const hostElement = document.querySelector<HTMLDivElement>('#app')!;
+const hostElement = document.querySelector('#app') as HTMLElement;
 
 const App = () => {
-  const count = useReactive({ value: 0 });
+  const [count, setCount] = useState(0);
 
-  const onClick = () => count.value++;
+  const onClick = () => setCount(count + 1);
 
   return (
     <div>
-      <img src={'/vite.svg'} class="logo" alt="Vite logo" />
+      <div style={{ display: 'flex' }}>
+        <img src={'./vite.svg'} class={'logo vite-logo'} alt="Vite logo" />
+        <img src={'./ruvy.svg'} class={'logo ruvy-logo'} alt="Ruvy logo" />
+      </div>
       <h1>Vite + Ruvy</h1>
       <p style={{ marginTop: '-20px' }}>
         <sub>Ruvy is a front-end framework inspired from React.</sub>
@@ -18,7 +21,7 @@ const App = () => {
         <sub>It is built for showcase purposes only.</sub>
       </p>
       <button onClick={onClick}>
-        You clicked : {count.value} time{count.value > 1 ? 's' : ''}
+        You clicked : {count} time{count > 1 ? 's' : ''}
       </button>
       <p>
         <a href="https://github.com/RiadhAdrani/ruvy" target="_blank">
