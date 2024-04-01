@@ -23,7 +23,7 @@
     "jsxFactory": "createJsxElement",
     "jsxFragmentFactory": "createJsxFragmentElement",
     "jsx": "react",
-    "types": ["./node_modules/@riadh-adrani/ruvy/build/types/global"]
+    "types": ["./node_modules/@riadh-adrani/ruvy/build/global"]
   },
   "include": ["src"]
 }
